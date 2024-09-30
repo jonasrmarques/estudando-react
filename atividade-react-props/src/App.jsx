@@ -4,7 +4,7 @@ import UserDetails from './components/UserDetails'
 function App() {
   return (
     <>
-      <UserDetails nome="Joãozinho" idade="1" profissao="Dev"/>
+      <UserDetails nome="Joãozinho" idade="20" profissao="Dev"/>
     </>
   )
 }

@@ -4,8 +4,6 @@ function UserDetails({nome, idade, profissao}){
         maiorIdade = "Você é maior idade, logo, pode tirar sua habilitação"
     } else
         maiorIdade = "Você é menor idade e tem que estudar"
-    
-   
     return(
         <>
         <p>Nome: {nome}</p>
