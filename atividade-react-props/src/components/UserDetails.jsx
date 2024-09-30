@@ -1,7 +1,9 @@
-function UserDetails(props){
-    const {nome, idade, profissao} = props
-
-    const maiorIdade = idade >= 18
+function UserDetails({nome, idade, profissao}){
+    let maiorIdade;
+    if(idade >= 18){
+        maiorIdade = "Você é maior idade, logo, pode tirar sua habilitação"
+    } else
+        maiorIdade = "Você é menor idade e tem que estudar"
     
    
     return(
@@ -9,7 +11,7 @@ function UserDetails(props){
         <p>Nome: {nome}</p>
         <p>Idade: {idade}</p>
         <p>Profissão: {profissao}</p>
-        <p>{maiorIdade ? 'Pode tirar sua Habilitação' : 'Não pode tirar sua habilitação'}</p>
+        <p>{maiorIdade}</p>
         </>
     )
     
